@@ -19,11 +19,11 @@ export default class ProductList extends Component {
 
     increment = (e) =>{
         this.setState({count: this.state.count + 1});
-        var iniArr=[];
-        iniArr.push(this.state.count)
-        var jsonInarra = JSON.stringify(iniArr)
-        localStorage.setItem("product_count" , jsonInarra);
-        console.log(JSON.parse(localStorage['iniArr']))
+        // var iniArr=[];
+        // iniArr.push(this.state.count)
+        // var jsonInarra = JSON.stringify(iniArr)
+        // localStorage.setItem("product_count" , jsonInarra);
+        // console.log(JSON.parse(localStorage['iniArr']))
     }
 
     decrement = (e) =>{
@@ -35,7 +35,6 @@ export default class ProductList extends Component {
         fetch("https://www.mocky.io/v2/5dfccffc310000efc8d2c1ad")
         .then(res => res.json())
         .then(json => {
-            console.log(json)
           this.setState({
             data: json,
           })
@@ -98,7 +97,7 @@ export default class ProductList extends Component {
                                     </div>
                                     <div className="food_list_img">
                                         <div className="dishs_img">
-                                            <img src={items.dish_image} className="img-fluid dish_img" alt="no-image"></img>
+                                            <img src={items.dish_image} className="img-fluid dish_img" alt="no-data"></img>
                                         </div>
                                     </div>
                                     
