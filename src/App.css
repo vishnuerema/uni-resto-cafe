@@ -46,14 +46,51 @@ a{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #a9a2a2;
+  padding: 10px;
 }
-.dish_img {
-  width: 100px;
-  height: 90px;
+.dishs_img {
+  width: 110px !important;
+  height: 100px !important;
 }
-@media screen and (max-width: 800px) {
+.food_list {
+  flex: 1;
+}
+.amount_list {
+  display: flex;
+  justify-content: space-between;
+}
+span.calorie_list {
+  margin-right: 20px;
+}
+.add_remove {
+  width: 167px;
+  background-color: #1f9123;
+  border: 1px solid #1f9123;
+  border-radius: 30px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+}
+.btn_cmnn{
+  background-color: #1f9123;
+  border: 1px solid #1f9123;
+  color: #fff;
+}
+.customization{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ca1212e6;
+}
+.bg_red{
+  background-color: #ca1212e6;
+  color: #fff;
+}
+/* @media screen and (max-width: 800px) {
   .tab_main .react-tabs__tab-list {
     overflow-x: scroll;
     width: 900px;
   }
-}
+} */
